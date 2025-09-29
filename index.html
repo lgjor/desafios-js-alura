@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio de Programação 01 da Alura</title>
+</head>
+
+<body>
+    <!-- Título principal destacado acima do quadro -->
+    <h1 class="titulo-principal">Boas vindas ao desafio de programação!</h1>
+    
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <!-- Título do quadro -->
+                <h2 class="titulo-quadro">Preencha os campos abaixo para interagir com o desafio:</h2>
+                
+                <!-- Formulários centralizados -->
+                <div class="formularios-container">
+                    <form class="form-item">
+                        <label for="diaSemana">Qual é o dia da semana?</label>
+                        <input type="text" id="diaSemana" name="diaSemana" class="input-form">
+                        <button type="button" class="button">Verificar</button>
+                    </form>
+
+                    <form class="form-item">
+                        <label for="isPositivo">Digite um número para verificar se é positivo ou negativo</label>
+                        <input type="number" id="numero" name="numero" class="input-form">
+                        <button type="button" class="button">Verificar</button>
+                    </form>
+                    
+                    <form class="form-item">
+                        <label for="pontuacao">Qual a sua pontuação no jogo?</label>
+                        <input type="number" id="pontuacao" name="pontuacao" class="input-form">
+                        <button type="button" class="button">Verificar Pontuação</button>
+                    </form>
+                    
+                    <!-- Botão de visualizar saldo -->
+                    <button class="button saldo-button">Visualizar Saldo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
