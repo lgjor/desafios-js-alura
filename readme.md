@@ -1,5 +1,11 @@
 # 🎮 Desafio de Programação JavaScript - Alura
 
+<p align="center">
+  <a href="https://lgjor.github.io/desafios-js-alura/" target="_blank">
+    <img src=".github/preview.jpg" width="100%" alt="Desafio 01 - JS Alura">
+  </a>
+</p>
+
 Um projeto interativo desenvolvido para praticar conceitos fundamentais de JavaScript através de desafios práticos e divertidos.
 
 ## 📋 Sobre o Projeto
