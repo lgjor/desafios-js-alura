@@ -2,7 +2,7 @@ let diaDaSemana = "";
 let numero = 0;
 let pontuacao = 0;
 
-// Função para capturar nome com validação
+// Captura nome com validação
 function capturarNome() {
     let nome;
     let tentativas = 0;
@@ -60,7 +60,7 @@ function capturarNome() {
 // Executar captura do nome
 const nomeUsuario = capturarNome();
 
-// Função para capturar o valor do formulário do dia da semana
+// Captura o valor do formulário do dia da semana
 function capturarDiaSemana() {
     const inputDiaSemana = document.getElementById("diaSemana");
     diaDaSemana = inputDiaSemana.value.toLowerCase().trim();
@@ -87,7 +87,7 @@ function capturarDiaSemana() {
     verificarFimDeSemana();
 }
 
-// Função para verificar se é fim de semana
+// Verificar se é fim de semana
 function verificarFimDeSemana() {
     if (diaDaSemana === "domingo" || diaDaSemana === "sábado") {  
         alert("Bom fim de semana!");
@@ -96,7 +96,7 @@ function verificarFimDeSemana() {
     }
 }
 
-// ✅ CORRETO: Função que retorna true se o número for válido
+// Verifica se o número é válido
 function isNumero(valorDigitado) {
     // Se o campo estiver vazio, retorna false
     if (valorDigitado === "") {
@@ -169,6 +169,10 @@ function resultadoDoJogo() {
     }
 }
 
+function visualizarSaldo() {
+    alert("Interface preparada para integração com sistema de saldo");
+}
+
 // Aguardar o carregamento da página e adicionar os event listeners
 document.addEventListener("DOMContentLoaded", function() {
     // ✅ Prevenir submit dos formulários
@@ -182,11 +186,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const botoes = document.querySelectorAll('button[type="button"]');
     if (botoes.length >= 3) {
         botoes[0].addEventListener("click", capturarDiaSemana);    // Primeiro botão - Dia da semana
-        botoes[1].addEventListener("click", capturarNumero);       // Segundo botão - Verificar Pontuação
-        botoes[2].addEventListener("click", capturarPontuacao);    // Terceiro botão - Visualizar Saldo
+        botoes[1].addEventListener("click", capturarNumero);       // Segundo botão - Verificar Positivo/Negativo
+        botoes[2].addEventListener("click", capturarPontuacao);    // Terceiro botão - Verifica Pontuação
+        botoes[3].addEventListener("click", visualizarSaldo);    // Quarto botão - Visualizar Saldo
     }
     
-    // ✅ Capturar ENTER nos inputs
+    // Capturar ENTER nos inputs
     
     // Input do dia da semana
     const inputDiaSemana = document.getElementById("diaSemana");
